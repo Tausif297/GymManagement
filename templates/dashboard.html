@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Dashboard{% endblock title %}
+{% block dashboard %}
+<meta http-equiv="refresh" content="10">
+<section class="text-gray-600 body-font overflow-hidden" id="dashboard">
+    <div class="container px-5 py-12 mx-auto">
+      <div class="flex flex-col text-center w-full mb-12">
+        <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">Welcome To Dashboard <marquee behavior="alternate" direction="right" loop="" class="marq_word">{{request.user}}</marquee></h1>
+        </div>
+  
+      <div class="flex flex-wrap -m-4">
+        
+        <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+          <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden text-center ad_link">
+           <h1>{{count_1}}</h1> 
+           <a href="/adminpanel/user/member/"> Members  </a>
+          </div>
+        </div>
+        <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+            <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden text-center ad_link">
+                <h1>{{count_2}}</h1> 
+                <a href="/adminpanel/user/contact/"> Contact Inq  </a>
+            </div>
+          </div>
+          <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+            <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden text-center ad_link">
+                <h1>{{count_3}}</h1> 
+                <a href="/adminpanel/user/plans/"> Plans  </a>
+            </div>
+          </div>
+          <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+            <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden text-center ad_link">
+                <h1>4</h1> 
+                 <a href="/#sponser"> Sponsers  </a>  
+            </div>
+          </div>
+          <h4 class="title-font mb-2 text-gray-900">*Note Admin if you want to make changes or see the content of counts given below kindly click on the name given in the box to see the details..</h4>
+        </div>
+    </div>
+    <div class="ad_button">
+      <a href="/adminpanel">Go to Admin Panel</a>
+    </div>
+  </section>
+{% endblock dashboard %}

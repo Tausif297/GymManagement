@@ -1,0 +1,22 @@
+{% extends "admin/base.html" %}
+
+{% comment %} {% load i18n  eatn_tags static %} {% endcomment %}
+
+{% load i18n %}
+
+{% load static %}
+
+ 
+
+{% block title %}{{ title }} | {% trans "Fitness Zone  | ADMIN " %}{% endblock %}
+
+{% block branding %}
+    <h1 id="site-name">{% trans "Fitness Zone | ADMIN" %}</h1>
+{% endblock %}
+
+{% block nav-global %} <a href="/admin" style="    border: 2px solid #f5dd5d;
+    padding: 5px;
+    background: #417690;
+    color: #f5dd5d;
+    border-radius: 12px;
+    text-decoration: none;">click to see dashboard</a>{% endblock %}

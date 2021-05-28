@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+#sec1{
+    width: 100%;
+    height: 100vh;
+}
+.area1{
+    background: url(../images/bg1.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: circle(58.1% at 22% 21%);
+}
+.GymName{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+.GymName h1{
+    color: white;
+    font-size: 65px;
+    filter: blur(2px);
+}
+
+.GymName marquee{
+    color: white;
+    text-transform: uppercase;
+    font-size: 46px;
+    width: 32%;
+    margin-left: 10%;
+    filter: blur(1px);
+  }
+  .enquiry{
+    position: absolute;
+    right: 1%;
+    top: 69%;  
+  }
+  .enquiry h2, h3{
+    font-weight: 900;
+    letter-spacing: 1px;
+  }
+.slogan{
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-top: -58%;
+    margin-left: 20%;
+}
+.call{
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin: 17% 0% 17% 20%;
+}
+.call a{
+    text-decoration: none;
+}
+.button{
+    padding: 3% 13%;
+    margin: 1% 6%;
+    position: absolute;
+    border: none;
+    outline: none;
+    border-radius: 34px;
+    cursor: pointer;
+    background:#8082ff;
+    color: white;
+}
+.brandImg{
+    transition: 5s;
+    transform: translate(100%, 20px);
+    position: absolute;
+}
+#sec2{
+    height: 400px;
+    width: 100%;
+    background: url(../images/about.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.brandTxt{
+    width: 32%;
+    position: absolute;
+    transform: translate(610px, 35px);
+    transition: 5s;
+    color: white;;
+}
+.brandTxt ul li{
+    list-style: square;
+}
+.brandTxt h4{
+    text-transform: uppercase;
+}
+.sponser{
+    margin-top: 4%;
+}
+.wrap{
+    display: inline-flex;
+}
+.wrap img{
+    width: 18%;
+    padding: 1%;
+    height: 36vh;
+    margin-left: 5%;
+}
+.member{
+    position: absolute;
+    width: 97%;
+    transform: translate(10px, -225px);
+    color: white;
+}
+.member h2{
+    color: white;
+}
+#contact{
+    background: url(../images/contact.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+    font-weight: 400;
+}
+#contact h1{
+    color: white;
+    font-weight: 400;
+}
+#contact label{
+    color: white;
+    font-weight: 400;
+}
+.logo{
+    width: 25%;
+    margin-left: 24%;
+}
+#dashboard{
+    height: 77vh;
+}
+.ad_link a{
+    text-decoration: none;
+    color: black;
+    border-top: 1px solid lightblue;
+    border-bottom: 1px solid lightblue;
+    border-radius: 25px;
+    font-size: 20px;
+}
+.ad_link a:hover{
+    background: lightblue;
+    color: white;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+.ad_button a{
+    padding: 0.5%;
+    margin: 0% 40%;
+    border: 1px solid black;
+    position: absolute;
+    width: 20%;
+    text-align: center;
+    background: black;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 32px;
+}
+.ad_button a:hover{
+    background: white;
+    color: black;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+.marq_word{
+    width: 15%;
+    margin-top: -0.9px;
+    position: absolute;
+    border: 1px transparent;
+    color: white;
+    background: black;
+}
+.spons img{
+    margin: auto;
+    width: 40%;
+}
+/* media queries  */
+
+@media (max-width : 1299px){
+    .enquiry{
+        right: 5%;
+    }
+    .enquiry, h2{
+        font-size: 23px;
+    }
+    .button{
+        padding: 3% 5%;
+        margin: 1% 8%;
+    }
+    .slogan{
+        margin-left: 27%;
+    }
+    .call{
+        margin: 17% 0% 17% 10%;
+    }
+
+}
+
+@media (max-width : 1125px){
+    .enquiry{
+        right: 1%;
+    }
+}
+
+@media (max-width : 998px){
+    .area1{
+        clip-path: circle(59.1% at 50% 22%);
+    }
+    .enquiry{
+        top: 52%;
+        color: white;
+        right: 11%;
+    }
+    .slogan{
+        margin-left: 18%;
+    }
+}
+@media (max-width : 950px){
+    .brandImg{
+        transform: translate(22%, 20px);
+    }
+    .brandTxt{
+        transform: translate(152%, 6%);
+    }
+}
+
+@media (max-width : 817px){
+    .enquiry{
+        top: 78%;
+        color: white;
+        right: 26%;
+        display: inline;
+    }
+    .GymName{
+        left: 2%;
+    }
+
+}
+
+@media (max-width : 688px){
+    .enquiry{
+        top: 79%;
+        right: 26%;
+    }
+    .enquiry, h2, h3{
+        font-size: 18px;
+    }
+}
+
+@media (max-width : 512px) {
+    .enquiry{
+        top: 74%;
+        right: 20%;
+    }
+    .enquiry,h2,h3{
+        font-size: 15px;
+    }
+    .slogan {
+        margin-left: 2%;
+    }
+}
+
+@media  (max-width : 388px) {
+    .area1{
+        clip-path: polygon(0 0, 100% 0%, 100% 50%, 0 50%);
+    }
+    .slogan{
+        margin-left: -6%;
+    }
+    .enquiry,h2,h3{
+        font-size: 15px;
+        color: black;
+    }
+    .enquiry{
+        top: 88%;
+        right: 24%;
+    }
+}
+
+@media  (max-width : 344px){
+  
+    .GymName h1 {
+        color: white;
+        font-size: 50px;
+        filter: blur(2px);
+    }
+    .GymName marquee {
+        color: white;
+        text-transform: uppercase;
+        font-size: 46px;
+        width: 78%;
+        filter: blur(1px);
+    }
+    .enquiry {
+        right: 9%;
+    }
+    .brandTxt {
+        transform: translate(15%, 33%);
+        font-size: 14px;
+        width: 83%;
+    }
+    .brandImg img{
+        width: 26%;
+    }
+    .brandImg{
+        transform: translate(38%, 20px);
+    }
+}

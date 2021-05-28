@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition: ease-in-out 1s;
+}
+.navbar{    
+    font-weight: 300;
+    background: black;
+    width: 100%;
+    z-index: 11;
+}
+#navbarSupportedContent ul li a{
+    color:white;
+    font-size: 21px;
+    transition: ease-in-out 1s;
+    border-radius: 25px;
+}
+#navbarSupportedContent ul li a:hover{
+    color:black;
+    font-size: 21px;
+    border-radius: 25px;
+    background: white;
+    padding: 1px 25px;
+    margin: 5px;
+}
+.navbar-brand img{
+    filter: invert(1);
+    height: 60px;
+    margin: -13px 0px 1px 33px;
+}
+.alert{
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+.bi{
+    position: absolute;
+}
+.alert span{
+    margin-left: 5%;
+}
+.btn-close{
+    margin-left: 75%;
+}
